@@ -29,9 +29,9 @@ INSTALLED_APPS = [
     'django.contrib.sites', # adcionado
     'allauth', # new
     'allauth.account', # new
-    'allauth.socialaccount', # new
-    'allauth.socialaccount.providers.github', # new
+    'allauth.socialaccount',  # new
     'allauth.socialaccount.providers.google',
+
     'Filomenas',
 
 ]

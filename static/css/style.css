@@ -28,6 +28,7 @@ header{
     transition: .5s;
 }
 
+
 header.rolagem{
     background-color: #fff;
     padding: 20px 4%;
@@ -73,3 +74,23 @@ header ul li a{
     font-weight: bold;
 }
 
+footer {
+    background-color: #E28743;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', 'sans-sarif';
+    color: white;
+    position: fixed;
+    bottom: 0;
+}

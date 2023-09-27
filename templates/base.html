@@ -37,8 +37,8 @@
 
             <div class="btn-contato">
 
-                <a href="#"><button>Sign in</button></a>
-                <a href="#"><button>Sign up</button></a>
+                <a href="{% url 'account_login' %}"><button>Sign in</button></a>
+                <a href="{% url 'account_signup' %}"><button>Sign up</button></a>
 
 
             </div>
@@ -58,6 +58,17 @@
 
 {% block footer %}
     
+<div class="m-6">
+    <footer>
+     <div class="rodape">
+         <div>
+            <p>
+                
+            </p> 
+         </div>
+     </div>
+    </div>
+
 {% endblock footer %}
     
 </html>

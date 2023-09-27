@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 500vh;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color:#FE775A;
+    text-decoration: none;
+}
+
