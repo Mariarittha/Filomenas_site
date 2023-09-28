@@ -42,17 +42,13 @@
 </div>
 
 
-
-
-
-
 {% else %}
 <p class="m-4 text-center">{% blocktrans %}If you have not created an account yet, then please
 <a href="{{ signup_url }}">sign up</a> first.{% endblocktrans %}</p>
 {% endif %}
 
 
-<form class="login text-center m-4" method="POST" action="{% url 'account_login' %}">
+<form class="login text-center m-4" method="POST" action="{% url 'index_logado' %}">
   {% csrf_token %}
   {{ form.as_p }}
   {% if redirect_field_value %}
@@ -70,8 +66,6 @@
     <button class="btn btn-secondary" type="submit">{% trans "Sign In" %}</button>
     
   </div>
-
-  
 </form>
 
 

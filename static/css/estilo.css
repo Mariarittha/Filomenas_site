@@ -5,7 +5,7 @@
 }
 
 html{
-    height: 500vh;
+    height: 300vh;
 }
 
 .container{
@@ -21,10 +21,8 @@ html{
 
 header{
     width: 100%;
-    padding: 60px 4%;
-    top: 0;
-    left: 0;
-    transition: .5s;
+    padding: 30px 4%;
+   
 }
 
 header ul{
@@ -41,3 +39,42 @@ header ul li a{
     text-decoration: none;
 }
 
+.btn-contato button{
+    border: 0;
+    background-color: #FE775A;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Estilos CSS para o footer */
+footer {
+    background-color: #E28743;
+    height: 150px; /* Altura do seu footer */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000; /* Opcional: use z-index para garantir que o footer esteja na parte superior de outros elementos fixos */
+}
+
+/* Estilos CSS para o conteúdo dentro do footer */
+.rodape {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    color: white;
+}
+
+/* Estilos adicionais conforme necessário */

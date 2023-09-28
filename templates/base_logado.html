@@ -32,15 +32,12 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Pacotes</a></li>
                     <li><a href="#">Filomenas</a></li>
-                    <li><a href="#">Entrar</a></li>
-
                 </ul>
             </nav>
 
             <div class="btn-contato">
 
-                <a href="{% url 'account_login' %}"><button>Entrar</button></a>
-                <a href="{% url 'account_signup' %}"><button>Cadastre-se</button></a>
+                <a href="{% url 'minha_conta' %}"><button>Minha conta</button></a>
 
 
             </div>
@@ -50,7 +47,6 @@
 
     </header>
 
-    <section class="banner"></section>
     
     <script src="menu.js"></script>
 
@@ -58,7 +54,7 @@
 {% endblock body %}
     
 
-{% block footer %}
+<!-- {% block footer %}
     
 <div class="m-6">
     <footer>
@@ -71,6 +67,6 @@
      </div>
     </div>
 
-{% endblock footer %}
+{% endblock footer %} -->
     
 </html>

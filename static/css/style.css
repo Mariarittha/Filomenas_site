@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 
-html{
+/* html{
     height: 500vh;
-}
+} */
+
 
 .container{
     max-width: 1200px;
@@ -21,11 +22,7 @@ html{
 
 header{
     width: 100%;
-    padding: 60px 4%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: .5s;
+    padding: 20px 4%;
 }
 
 
@@ -52,13 +49,13 @@ header ul li a{
     text-decoration: none;
 }
 
-.banner{
+/* .banner{
     height: 100vh;
-    background-image: url('/static/img/filo.jpeg');
+     background-image: url('/static/img/filo.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 .btn-contato button{
     border: 0;
@@ -74,23 +71,28 @@ header ul li a{
     font-weight: bold;
 }
 
+/* Estilos CSS para o footer */
 footer {
     background-color: #E28743;
-    height: 150px;
+    height: 150px; /* Altura do seu footer */
     width: 100%;
+    position: fixed;
+    bottom: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 1000; /* Opcional: use z-index para garantir que o footer esteja na parte superior de outros elementos fixos */
 }
 
+/* Estilos CSS para o conteúdo dentro do footer */
 .rodape {
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
     font-size: 18px;
-    font-family: 'Source Sans Pro', 'sans-sarif';
+    font-family: 'Source Sans Pro', 'sans-serif';
     color: white;
-    position: fixed;
-    bottom: 0;
 }
+
+/* Estilos adicionais conforme necessário */
