@@ -10,8 +10,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')), 
     path('', index, name='index'),
+    
+    #logado 
+    
     path('index/', index_logado, name='index_logado'),
-    path('minha_conta/', Minha_conta, name='minha_conta')
+    path('minha_conta/', Minha_conta, name='minha_conta'), 
 
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

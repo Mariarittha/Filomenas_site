@@ -3,8 +3,7 @@ from django.shortcuts import render
 # Sem cadastro
 
 def index(request):
-    return render (request, 'Filomenas/index.html')
-
+    return render (request, 'Visitantes/index.html')
 
 # Com login
 

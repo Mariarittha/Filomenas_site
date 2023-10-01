@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 300vh;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 30px 4%;
+   
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color:#FE775A;
+    text-decoration: none;
+}
+
+.btn-contato button{
+    border: 0;
+    background-color: #FE775A;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Estilos CSS para o footer */
+footer {
+    background-color: #E28743;
+    height: 150px; /* Altura do seu footer */
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000; /* Opcional: use z-index para garantir que o footer esteja na parte superior de outros elementos fixos */
+}
+
+/* Estilos CSS para o conteúdo dentro do footer */
+.rodape {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    color: white;
+}
+
+/* Estilos adicionais conforme necessário */
+
+
+
