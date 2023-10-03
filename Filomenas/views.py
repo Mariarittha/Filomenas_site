@@ -5,6 +5,9 @@ from django.shortcuts import render
 def index(request):
     return render (request, 'Visitantes/index.html')
 
+def teste(request):
+    return render(request,'Visitantes/form.html')
+
 # Com login
 
 def index_logado(request):

@@ -5,7 +5,7 @@
 }
 
 html{
-    height: 300vh;
+    height: 200vh;
 }
 
 .container{
@@ -25,7 +25,6 @@ header{
    
 }
 
-
 header ul{
     list-style-type: none;
 }
@@ -36,13 +35,13 @@ header ul li{
 }
 
 header ul li a{
-    color:#FE775A;
+    color:#E28743;
     text-decoration: none;
 }
 
 .btn-contato button{
     border: 0;
-    background-color: #FE775A;
+    background-color: #E28743;
     color: #fff;
     cursor: pointer;
     transition: .2s;
@@ -53,7 +52,20 @@ header ul li a{
     font-size: 0.8rem;
     font-weight: bold;
 }
-footer {
+
+/* footer {
+    padding: auto;
+    margin-top: 90px;
+    background-color: #E28743;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    height: 350px;
+    width: 100%;
+    position: fixed;
+} */
+
+ footer {
     padding: auto;
     margin-top: 90px;
     background-color:#E28743;
@@ -65,7 +77,8 @@ footer {
     bottom: 0;
     width: 100%;
 
-}
+} 
+
 
 .f { 
     background-color:#E28743; 

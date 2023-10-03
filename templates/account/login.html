@@ -1,13 +1,55 @@
-{% extends "account/base.html" %}
-
+{% load static %}
 {% load i18n %}
 {% load account socialaccount %}
-
 {% block head_title %}login{% trans "Sign In" %}{% endblock %}
 
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{% static 'css/logado.css' %}" rel="stylesheet">
+  <title>tela de login</title>
+</head>
+<body>
+  
+  <section class="form-container">
+    <div class="container">    
 
-     {% block content %}
+        <form method="POST" action="{% url 'index_logado' %}">
+          <h1>Fazer login</h1>
+          <p> Se você ainda não criou uma conta, por favor 
+            <a href="{{ signup_url }}">cadastre-se</a> primeiro</p>
 
+          {% csrf_token %}
+           {{ form.as_p }}
+           {% if redirect_field_value %}
+
+            <div class="input-single">
+              <input type="hidden" name="{{ redirect_field_name }}" class="input" id="nome-box" value="{{ redirect_field_value }}" required/>
+             {% endif %}
+
+             <div class="btn">
+              <button class="btn btn-secondary" type="submit">{% trans "Sign In" %}</button>
+
+            </div>
+            <p><a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a></p>
+
+
+            </div>
+        </form>
+        <a href="{% url 'index' %}"><button class="btn btn-secondary">Voltar</button></a>
+
+    </div>
+</section>
+
+</body>
+</html>
+
+
+
+<!-- 
      {% get_providers as socialaccount_providers %}
 
   {% if socialaccount_providers %}
@@ -33,40 +75,11 @@
   {% endif %}
 
 
-      <section class="form-container">
-        <div class="container">
-          <h1>Fazer login</h1>
-          
-            
-        <form class="login text-center m-4" method="POST" action="{% url 'index_logado' %}">
-          {% csrf_token %}
-          {{ form.as_p }}
-          {% if redirect_field_value %}
-        
-         
-            <!-- <div class="mb-3">
-                <label for="nome" class="form-label"><strong>Nome</strong></label>
-                {{ form.nome }}
-            </div> -->
-            
-            <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-            {% endif %}
-            <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-            <button class="btn btn-secondary" type="submit">{% trans "Sign In" %}</button>
-            
-        </form>
-      </div>
-     </section>
-
-
+  
+ -->
 
 
      <!-- <h1 class="m-4 text-center">{% trans "Sign In" %}</h1> -->
-
-
-     
-
-
 
 
 {% endblock %}
